@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections (original color is #ffffff and for the custome color is #f4e8e0) */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #ce1212; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -32,7 +32,7 @@
 :root {
   --nav-color: #7f7f90; /* The default color of the main navmenu links */
   --nav-hover-color: #ce1212; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: #f4e8e0; /* Used as the background color for mobile navigation menu (original color is #ffffff) */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #7f7f90; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ce1212; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -41,7 +41,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f2f2f2;
+  --background-color: #f2f2f2; /* The original color is #f2f2f2 */
   --surface-color: #ffffff;
 }
 
@@ -80,7 +80,7 @@ a:hover {
 
 /* navbar logo - fixed selector and sensible sizing */
 .navbar-logo {
-  max-height: 70px !important; /* bigger desktop logo */
+  max-height: 45px !important; /* bigger desktop logo */
   width: auto !important;
   height: auto !important;
 }
