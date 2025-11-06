@@ -933,6 +933,25 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .whatsapp-logo,
+.book-a-table .whatsapp-logo {
+  /* reduce WhatsApp logo size inside About section */
+  display: inline-block;
+  width: 48px;
+  max-width: 48px;
+  height: auto;
+  object-fit: contain;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .about .whatsapp-logo,
+  .book-a-table .whatsapp-logo {
+    width: 36px;
+    max-width: 36px;
+  }
+}
+
 .about h3 {
   font-weight: 700;
   font-size: 28px;
@@ -1693,6 +1712,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+/* .starter-section {
+  Add your styles here
+ } */
