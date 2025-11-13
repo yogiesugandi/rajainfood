@@ -1,0 +1,32 @@
+# Block direct access to all subfolders except allowed files
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/assets/(css|img|js|scss|vendor|forms)/?$ [NC]
+RewriteRule ^ - [F]
+
+# Disable directory listing
+Options -Indexes
+
+# Prevent direct access to folders
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [F]
+
+# Allow access to files
+<FilesMatch "\.(jpg|jpeg|png|gif|css|js|ico|svg|webp|woff|woff2|ttf|eot|otf|pdf)$">
+  Order Allow,Deny
+  Allow from all
+</FilesMatch>
+
+# Deny access to .htaccess itself
+<Files ".htaccess">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# Blokir akses langsung ke semua folder
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !(\.jpg|\.jpeg|\.png|\.gif|\.css|\.js|\.ico|\.svg|\.webp|\.woff|\.woff2|\.ttf|\.eot|\.otf|\.pdf)$ [NC]
+RewriteCond %{REQUEST_URI} !^/index\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/starter-page\.html$ [NC]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [F]
