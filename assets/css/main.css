@@ -1174,8 +1174,28 @@ section,
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+/* .menu  {
+  background-image: url("/assets/img/BGLogo.png");
+  position: relative;
+  z-index: 1;
+  background-size: 10%;
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  z-index: -1;
+} */
+
 .menu .nav-tabs {
-  border: 0;
+  border: 0;  
 }
 
 .menu .nav-link {
@@ -1451,9 +1471,9 @@ span.people {
 }
 
 /*--------------------------------------------------------------
-# Chefs Section
+# product Section
 --------------------------------------------------------------*/
-.chefs .team-member {
+.product .team-member {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -1462,12 +1482,12 @@ span.people {
   transition: 0.3s;
 }
 
-.chefs .team-member .member-img {
+.product .team-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.chefs .team-member .member-img:after {
+.product .team-member .member-img:after {
   position: absolute;
   content: "";
   left: -1px;
@@ -1482,7 +1502,7 @@ span.people {
   z-index: 1;
 }
 
-.chefs .team-member .social {
+.product .team-member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1493,7 +1513,7 @@ span.people {
   z-index: 2;
 }
 
-.chefs .team-member .social a {
+.product .team-member .social a {
   transition: color 0.3s;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin: 15px 12px;
@@ -1502,33 +1522,33 @@ span.people {
   text-align: center;
 }
 
-.chefs .team-member .social a:hover {
+.product .team-member .social a:hover {
   color: var(--default-color);
 }
 
-.chefs .team-member .social i {
+.product .team-member .social i {
   font-size: 18px;
 }
 
-.chefs .team-member .member-info {
+.product .team-member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.chefs .team-member .member-info h4 {
+.product .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   font-family: var(--default-font);
 }
 
-.chefs .team-member .member-info span {
+.product .team-member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.chefs .team-member .member-info p {
+.product .team-member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1536,12 +1556,12 @@ span.people {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.chefs .team-member:hover {
+.product .team-member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.chefs .team-member:hover .social {
+.product .team-member:hover .social {
   right: 8px;
   opacity: 1;
 }
@@ -1640,7 +1660,7 @@ span.people {
   right: 0;
   bottom: 0;
   background-color: var(--background-rf);
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
