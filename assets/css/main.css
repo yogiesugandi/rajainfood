@@ -1403,11 +1403,11 @@ span.people {
 /*--------------------------------------------------------------
 # Events Section
 --------------------------------------------------------------*/
-.events .container-fluid {
+.client .container-fluid {
   padding: 0;
 }
 
-.events .event-item {
+.client .event-item {
   background-size: cover;
   background-position: cente;
   min-height: 600px;
@@ -1415,19 +1415,19 @@ span.people {
 }
 
 @media (max-width: 575px) {
-  .events .event-item {
+  .client .event-item {
     min-height: 500px;
   }
 }
 
-.events .event-item:before {
+.client .event-item:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
 }
 
-.events .event-item h3 {
+.client .event-item h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -1435,7 +1435,7 @@ span.people {
   position: relative;
 }
 
-.events .event-item .price {
+.client .event-item .price {
   color: #ffffff;
   border-bottom: 2px solid var(--accent-color);
   font-size: 32px;
@@ -1444,22 +1444,22 @@ span.people {
   position: relative;
 }
 
-.events .event-item .description {
+.client .event-item .description {
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.8);
   position: relative;
 }
 
-.events .swiper-wrapper {
+.client .swiper-wrapper {
   height: auto;
 }
 
-.events .swiper-pagination {
+.client .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.events .swiper-pagination .swiper-pagination-bullet {
+.client .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
