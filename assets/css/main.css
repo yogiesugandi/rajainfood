@@ -813,7 +813,7 @@ section,
   padding: 60px 0;
   display: flex;
   align-items: center;
-  background-image: url("/assets/img/BGLogo.png");
+  background-image: url("../assets/img/BGlogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
@@ -1023,7 +1023,7 @@ section,
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us {
-  background-image: url("/assets/img/BGLogo.png");
+  background-image: url("../assets/img/BGlogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
@@ -1175,7 +1175,7 @@ section,
 # Menu Section
 --------------------------------------------------------------*/
 /* .menu  {
-  background-image: url("/assets/img/BGLogo.png");
+  background-image: url("../assets/img/BGlogo.png");
   position: relative;
   z-index: 1;
   background-size: 10%;
@@ -1301,7 +1301,7 @@ span.people {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  background-image: url("/assets/img/BGLogo.png");
+  background-image: url("../assets/img/BGlogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
@@ -1643,7 +1643,7 @@ span.people {
 # Gallery Section
 --------------------------------------------------------------*/
 .gallery {
-  background-image: url("/assets/img/BGLogo.png");
+  background-image: url("../assets/img/BGlogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
