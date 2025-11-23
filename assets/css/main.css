@@ -628,7 +628,7 @@ h6 {
 #preloader {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 99999;
   overflow: hidden;
   background-color: var(--background-color);
   transition: all 0.6s ease-out;
@@ -649,7 +649,32 @@ h6 {
   animation-delay: -0.5s;
 }
 
+#preloader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: auto;
+  animation: animate-preloader 2s ease-in-out infinite;
+}
+
 @keyframes animate-preloader {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* @keyframes animate-preloader {
   0% {
     width: 10px;
     height: 10px;
@@ -665,7 +690,7 @@ h6 {
     left: calc(50% - 36px);
     opacity: 0;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -813,7 +838,7 @@ section,
   padding: 60px 0;
   display: flex;
   align-items: center;
-  background-image: url("../assets/img/BGlogo.png");
+  background-image: url("/assets/img/BGLogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
@@ -1023,7 +1048,7 @@ section,
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us {
-  background-image: url("../assets/img/BGlogo.png");
+  background-image: url("/assets/img/BGLogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
@@ -1174,13 +1199,13 @@ section,
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
-/* .menu  {
-  background-image: url("../assets/img/BGlogo.png");
+/* .menu {
+  background-image: url("/assets/img/BGLogoBlack.png");
   position: relative;
-  z-index: 1;
-  background-size: 10%;
+  z-index: -1;
+  background-size: cover;
   background-position: center center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .menu::before {
@@ -1190,12 +1215,12 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: -1;
 } */
 
 .menu .nav-tabs {
-  border: 0;  
+  border: 0;
 }
 
 .menu .nav-link {
@@ -1301,7 +1326,7 @@ span.people {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  background-image: url("../assets/img/BGlogo.png");
+  background-image: url("/assets/img/BGLogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
@@ -1643,7 +1668,7 @@ span.people {
 # Gallery Section
 --------------------------------------------------------------*/
 .gallery {
-  background-image: url("../assets/img/BGlogo.png");
+  background-image: url("/assets/img/BGLogo.png");
   background-color: var(--background-rf);
   position: relative;
   z-index: 1;
