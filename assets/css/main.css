@@ -659,6 +659,12 @@ h6 {
   animation: animate-preloader 2s ease-in-out infinite;
 }
 
+@media (max-width: 768px) {
+  #preloader img {
+    width: 20%;
+  }
+}
+
 @keyframes animate-preloader {
   0% {
     opacity: 1;
