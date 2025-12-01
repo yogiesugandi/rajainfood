@@ -120,9 +120,9 @@
               data-aos="zoom-out"
             >
               <img
-                src="assets/img/hero-img1.png"
+                src="assets/img/hero-img2.png"
                 class="img-fluid animated"
-                alt=""
+                alt="Catering"
               />
             </div>
           </div>
@@ -257,10 +257,10 @@
                   pelayanan yang baik.
                 </p>
                 <div class="text-center">
-                  <button type="button" class="btn more-btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-bs-content="Info Pemesanan"
-                    ><span>Info Pemesanan</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></button>
+                  <button type="button" class="btn more-btn" data-bs-toggle="modal" data-bs-target="#infoPemesananModal">
+                    <span>Info Pemesanan</span>
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1336,7 +1336,7 @@
                   /></a>
                   <h4>Serabi Solo</h4>
                   <p class="ingredients">
-                    serabi solo original dengan dengan aneka pilihan rasa.
+                    serabi solo original dan dengan aneka pilihan rasa.
                   </p>
                   <p class="price">Rp 5.000</p>
                 </div>
@@ -1977,7 +1977,7 @@
               <div class="team-member">
                 <div class="member-img">
                   <img
-                    src="assets/img/kemasan/bramgor.jpg"
+                    src="assets/img/kemasan/bramgor1.jpg"
                     class="img-fluid"
                     alt=""
                   />
@@ -1996,7 +1996,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Chef Team Member -->
+            <!-- End Packaging Product Member -->
 
             <div
               class="col-lg-4 d-flex align-items-stretch"
@@ -2006,7 +2006,7 @@
               <div class="team-member">
                 <div class="member-img">
                   <img
-                    src="assets/img/kemasan/kensari.jpg"
+                    src="assets/img/kemasan/kensari1.jpg"
                     class="img-fluid"
                     alt=""
                   />
@@ -2025,7 +2025,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Chef Team Member -->
+            <!-- End Packaging Product Member -->
 
             <div
               class="col-lg-4 d-flex align-items-stretch"
@@ -2054,13 +2054,13 @@
                 </div>
               </div>
             </div>
-            <!-- End Chef Team Member -->
+            <!-- End Packaging Product Member -->
           </div>
         </div>
       </section>
-      <!-- /Chefs Section -->
+      <!-- /Packaging Product Section -->
 
-      <!-- Book A Table Section -->
+      <!-- Book A Menu Section -->
       <section id="book-a-table" class="book-a-table section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -2085,7 +2085,7 @@
               data-aos-delay="200"
             >
               <form
-                action="forms/book-a-table.php"
+                action="forms/book-a-menu.php"
                 method="post"
                 role="form"
                 class="php-email-form"
@@ -2176,7 +2176,7 @@
           </div>
         </div>
       </section>
-      <!-- /Book A Table Section -->
+      <!-- /Book A Menu Section -->
 
       <!-- Gallery Section -->
       <section id="galeri" class="gallery section light-background">
@@ -2484,7 +2484,7 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
           <div class="mb-5">
             <iframe
               style="width: 100%; height: 400px"
@@ -2499,7 +2499,7 @@
               <div
                 class="info-item d-flex align-items-center"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="300"
               >
                 <i class="icon bi bi-envelope flex-shrink-0"></i>
                 <div>
@@ -2514,11 +2514,11 @@
               <div
                 class="info-item d-flex align-items-center"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="400"
               >
                 <i class="icon bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
+                  <h3>Hubungi Kami</h3>
                   <p>+62 851 1993 5611</p>
                 </div>
               </div>
@@ -2529,7 +2529,7 @@
               <div
                 class="info-item d-flex align-items-center"
                 data-aos="fade-up"
-                data-aos-delay="400"
+                data-aos-delay="500"
               >
                 <i class="icon bi bi-geo-alt flex-shrink-0"></i>
                 <div>
@@ -2544,7 +2544,7 @@
               <div
                 class="info-item d-flex align-items-center"
                 data-aos="fade-up"
-                data-aos-delay="500"
+                data-aos-delay="600"
               >
                 <i class="icon bi bi-clock flex-shrink-0"></i>
                 <div>
@@ -2560,7 +2560,7 @@
           </div>
 
           <form
-            action="forms/contact.php"
+            action="forms/kontak.php"
             method="post"
             class="php-email-form"
             data-aos="fade-up"
@@ -2701,6 +2701,75 @@
     <!-- Preloader -->
     <div id="preloader">
       <img src="assets/img/rajainfood/Logo Rajain Kecil.png" alt="logo rajainfood">
+    </div>
+
+    <!-- Modal info pemesanan -->
+    <div class="modal fade" id="infoPemesananModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Info Pemesanan</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Minimal Order</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>Nasi Box min. 50 box atau ongkir sesuai jarak.</li>
+                <li>Nasi Tampah min. 1 tampah.</li>
+              </ul>
+
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Isi Menu</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>Nasi Box: isi sesuai paket.</li>
+                <li>Nasi Tampah: sesuai menu resmi.</li>
+              </ul>
+
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Pembatalan</h5>
+              <ul style='padding-left: 14px;'>
+                <li>Tidak bisa dibatalkan setelah DP bayar.</li>
+                <li>DP non-refundable.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Waktu Pemesanan</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>Max H-7 sebelum acara.</li>
+                <li>Dibawah H-7 konfirmasi admin.</li>
+                <li>Senin-Sabtu: 06.00-20.00</li>
+              </ul>
+
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Harga & Pengiriman</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>Sesuai paket & menu.</li>
+                <li>Free Ongkir min 50 Box, ±10 km.</li>
+              </ul>
+
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Pembayaran</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>DP 50%, lunas H-2.</li>
+                <li>Via rekening resmi.</li>
+              </ul>
+
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Pembatalan</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>Pemesanan tidak dapat dibatalkan setelah DP dibayarkan.</li>
+                <li>DP bersifat non-refundable.</li>
+              </ul>
+
+              <h5 style='font-weight: bold; margin-bottom: 6px;'>Ketentuan lain</h5>
+              <ul style='margin-bottom: 8px; padding-left: 14px;'>
+                <li>Harga dan menu bisa berubah sewaktu - waktu sesuai kebijakan Rajain Food.</li>
+                <li>Dengan memesan pelanggan dianggap menyetuji syarat dan ketentuan ini.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Vendor JS Files -->
