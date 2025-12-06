@@ -1880,30 +1880,3 @@ span.people {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.footer {
-  padding: 40px 0;
-  font-size: 14px;
-  background-color: var(--surface-color);
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
-}
-.footer a {
-  color: var(--default-color);
-}
-.footer a:hover {
-  color: var(--accent-color);
-}
-.footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  line-height: 1;
-  margin: 0 10px 0 0;
-  transition: 0.3s;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-}
-.footer .social-links a:hover {
-  color: var(--accent-color);
-}
