@@ -1880,3 +1880,10 @@ span.people {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
+
+.error-404 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 30px;
+}
