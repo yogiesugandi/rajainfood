@@ -1842,8 +1842,68 @@ span.people {
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Starter 404
 --------------------------------------------------------------*/
-/* .starter-section {
-  Add your styles here
- } */
+.starter-404 {
+  text-align: center;
+  padding: 120px 0;
+}
+.starter-404 h1 {
+  font-size: 120px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--accent-color);
+}
+.starter-404 h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0 20px 0;
+}
+.starter-404 p {
+  margin-bottom: 30px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+.starter-404 .btn-home {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+.starter-404 .btn-home:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 40px 0;
+  font-size: 14px;
+  background-color: var(--surface-color);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
+.footer a {
+  color: var(--default-color);
+}
+.footer a:hover {
+  color: var(--accent-color);
+}
+.footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+  margin: 0 10px 0 0;
+  transition: 0.3s;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+.footer .social-links a:hover {
+  color: var(--accent-color);
+}
